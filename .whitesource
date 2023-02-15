@@ -1,10 +1,10 @@
 {
   "scanSettings": {
     "configMode": "AUTO",
-    "configExternalURL": "",
+    "enableLicenseViolations": "true",
     "projectToken": "",
-    "baseBranches": [],
-    "enableLicenseViolations": "true"
+    "enableIaC": "true",
+    "baseBranches": []
   },
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
@@ -12,12 +12,13 @@
   },
   "issueSettings": {
     "minSeverityLevel": "LOW"
+    "issueType": "DEPENDENCY"
   },
   "remediateSettings": {
-    "workflowRules": {
-      "enabled": true,
-      "minVulnerabilitySeverity": "LOW"
-    },
-    "extends": ["github>whitesource/merge-confidence:beta"]
+    "extends": ["github>whitesource/merge-confidence:beta"],
+    "workflowrules": {
+    "enabled": true,
+    "minVulnerabilitySeverity": "LOW"
+    }
   }
 }
