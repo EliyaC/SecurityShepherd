@@ -11,14 +11,14 @@
     "displayMode": "diff"
   },
   "issueSettings": {
-    "minSeverityLevel": "LOW"
+    "minSeverityLevel": "LOW",
     "issueType": "DEPENDENCY"
   },
   "remediateSettings": {
     "extends": ["github>whitesource/merge-confidence:beta"],
     "workflowrules": {
-    "enabled": true,
-    "minVulnerabilitySeverity": "LOW"
+      "enabled": true,
+      "minVulnerabilitySeverity": "LOW"
     }
   }
 }
