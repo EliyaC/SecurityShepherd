@@ -6,6 +6,11 @@
     "enableIaC": "true",
     "baseBranches": []
   },
+   "scanSettingsSAST": {
+    "enableScan": "true",
+    "enableRemediation": "true",
+    "scanPullRequests": "true"
+  },
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
     "displayMode": "diff"
