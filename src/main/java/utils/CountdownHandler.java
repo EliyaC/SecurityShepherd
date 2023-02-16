@@ -122,8 +122,8 @@ public class CountdownHandler {
 
 		if (hasStartTime) {
 
-			// Start timer enabled, only return true if timer has passed
-			return startTime.isBefore(LocalDateTime.now());
+			// Start timer enabled, only return true if timer has passed !
+			return startTime.isBefore(LocalDateTime.now()); 
 		} else {
 
 			// Start timer disabled, always say it's started
