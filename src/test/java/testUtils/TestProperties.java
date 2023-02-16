@@ -284,7 +284,7 @@ public class TestProperties {
 			log.debug(userName + " could authenticate. returning true");
 			result = true;
 		} else {
-			failAndPrint("Could not Verify User " + userName + " could authenticate at all.");
+			failAndPrint("Could not Verify User! " + userName + " could authenticate at all.");
 		}
 
 		return result;
